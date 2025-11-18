@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="te">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>నా సైట్ — త్వరలో ఇక్కడ</title>
+    <meta
+      name="description"
+      content="మా సైట్ త్వరలో లభ్యం అవుతుంది — మరిన్ని వివరాల కోసం QR స్కాన్ చేయండి." />
+    <!-- Google font: Noto Sans Telugu -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&display=swap"
+      rel="stylesheet" />
+    <style>
+      :root {
+        --accent: #0b74de;
+      }
+      body {
+        font-family: 'Noto Sans Telugu', system-ui, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f8fafc;
+        color: #0b1720;
+      }
+      .container {
+        max-width: 900px;
+        margin: 6vh auto;
+        padding: 2rem;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2.25rem;
+        margin: 0.5rem 0;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 1.6;
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 1.25rem;
+        padding: 0.75rem 1.25rem;
+        background: var(--accent);
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+      footer {
+        margin-top: 3rem;
+        color: #475569;
+        font-size: 0.95rem;
+      }
+      img.qr {
+        width: 220px;
+        height: 220px;
+        margin-top: 1.25rem;
+        border: 6px solid white;
+        box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>మా కొత్త వెబ్‌సైట్ త్వరలో ఇస్తోంది</h1>
+      <p>
+        మీ ప్రయోజనానికి ప్రత్యేకంగా రూపొందిస్తున్నాము. మరి కొన్ని రోజుల్లో
+        ప్రారంభం. త్వరలో గమనించండి — మరిన్ని అప్‌డేట్స్ కోసం క్రింద ఉన్న QR
+        స్కాన్ చేయండి.
+      </p>
+
+      <!-- Replace src with the QR image you generate -->
+      <img
+        class="qr"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https://your-site-name.netlify.app&format=png"
+        alt="QR" />
+      <div>
+        <a class="cta" href="mailto:hello@example.com?subject=సమాచారం"
+          >మాకు మెయిల్ చేయండి</a
+        >
+      </div>
+      <footer>© 2025 మీ సంస్థ పేరు · అన్ని హక్కులు సంరక్షించబడ్డాయి</footer>
+    </main>
+  </body>
+</html>
